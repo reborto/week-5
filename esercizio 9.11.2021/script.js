@@ -34,3 +34,21 @@
 
 
 }
+
+function avanzCalculator(numbers) {
+    const sum = () => numbers.reduce((acc, num) => acc + num);
+    const sub = () => numbers.reduce((acc, num) => acc - num);
+    const mul = () => numbers.reduce((acc, num) => acc * num);
+    const div = () => numbers.reduce((acc, num) => acc / num);
+    const potenz = () => numbers.map(num => num * num);
+    const rad = () => numbers.map(num => Math.sqrt(num));
+    return {
+        sum: sum(),
+        sub: sub(),
+        mul: mul(),
+        div: div(),
+        potenz: potenz(),
+        rad: rad()
+    }
+
+}
