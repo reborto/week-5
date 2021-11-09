@@ -14,7 +14,7 @@
     }
 
     function molt() {
-        let moltTotal = [0];
+        let moltTotal = numbers[0];
         for (num of numbers) moltTotal *= num;
         return moltTotal / numbers[0];
     }
