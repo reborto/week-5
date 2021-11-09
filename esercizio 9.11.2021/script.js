@@ -10,7 +10,7 @@
     function sub() {
         let subTotal = numbers[0];
         for (num of numbers) subTotal -= num;
-        return subTotal;
+        return subTotal+numbers[0];
     }
 
     function molt() {
@@ -31,23 +31,23 @@
         molt: molt(),
         divis: divis(),
     };
-
-
 }
+
+//2
 
 function avanzCalculator(numbers) {
     const sum = () => numbers.reduce((acc, num) => acc + num);
     const sub = () => numbers.reduce((acc, num) => acc - num);
     const mul = () => numbers.reduce((acc, num) => acc * num);
     const div = () => numbers.reduce((acc, num) => acc / num);
-    const potenz = () => numbers.map(num => num * num);
+    const pot = () => numbers.map(num => num * num);
     const rad = () => numbers.map(num => Math.sqrt(num));
     return {
         sum: sum(),
         sub: sub(),
         mul: mul(),
         div: div(),
-        potenz: potenz(),
+        potenz: pot(),
         rad: rad()
     }
 
