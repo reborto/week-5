@@ -1,37 +1,38 @@
-function calculator(numbers) {
-    function sum() {
-        let sumTotal = 0;
-        for (num of numbers) sumTotal += num;
-        return sumTotal;
-    }
+// function calculator(numbers) {
+//     function sum() {
+//         let sumTotal = 0;
+//         for (num of numbers) sumTotal += num;
+//         return sumTotal;
+//     }
 
-    function sub() {
-        let subTotal = numbers[0];
-        for (num of numbers) subTotal -= num;
-        return subTotal+numbers[0];
-    }
+//     function sub() {
+//         let subTotal = numbers[0];
+//         for (num of numbers) subTotal -= num;
+//         return subTotal+numbers[0];
+//     }
 
-    function molt() {
-        let moltTotal = numbers[0];
-        for (num of numbers) moltTotal *= num;
-        return moltTotal / numbers[0];
-    }
+//     function molt() {
+//         let moltTotal = numbers[0];
+//         for (num of numbers) moltTotal *= num;
+//         return moltTotal / numbers[0];
+//     }
 
-    function divis() {
-        let divisTotal = numbers[0];
-        for (num of numbers) divisTotal /= num;
-        return divisTotal * numbers[0];
-    }
+//     function divis() {
+//         let divisTotal = numbers[0];
+//         for (num of numbers) divisTotal /= num;
+//         return divisTotal * numbers[0];
+//     }
 
-    return {
-        sum: sum(),
-        sub: sub(),
-        molt: molt(),
-        divis: divis(),
-    };
-}
+//     return {
+//         sum: sum(),
+//         sub: sub(),
+//         molt: molt(),
+//         divis: divis(),
+//     };
+// }
 
 //2
+
 
 function avanzCalculator(numbers) {
     const sum = () => numbers.reduce((acc, num) => acc + num);
@@ -48,5 +49,7 @@ function avanzCalculator(numbers) {
         potenz: pot(),
         rad: rad()
     }
-
 }
+
+let numbers = prompt('inserisci valori')
+let operazioni = prompt('inserisci operazione')
